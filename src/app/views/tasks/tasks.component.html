@@ -1,0 +1,26 @@
+
+<app-menu></app-menu>
+<br>
+<h1>Tasks</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">Operations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let task of tasks" [@fade]>
+      <th scope="row"> {{ task.id }}</th>
+      <td> {{ task.title }} </td>
+      <td> {{ task.body }} </td>
+      <td>
+        <button type="button" class="btn btn-link" (click)="update(task)">Actualizar</button>
+        <button type="button" class="btn btn-link" (click)="delete(task)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,22 @@
+node_modules/
+dist/
+tmp/
+out-tsc/
+.idea/
+
+# .angular-cli.json
+# .angular-cli.json.orig
+# karma.conf.js
+# protractor.conf.js
+# tslint.json
+
+*.log
+*.log.*
+logs/
+log-data/
+
+*.swp
+*~
+.DS_Store
+/yarn.lock
+package-lock.json
